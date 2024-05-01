@@ -16,9 +16,10 @@ function App() {
       </AppBar>
       <main>
         <div>
-          <Container maxWidth="sm" style={{ backgroundColor: "blue" }}>
-            <Typography variant="h4" style={{ color: 'white' }}>Welcome to My Photo Album</Typography>
-            <Typography variant="body1" style={{ color: 'white' }}>This is a sample text for the photo album.</Typography>
+          <Container maxWidth="sm">
+            <Typography variant='h5' align='center' color='textPrimary' gutterBottom>Photo Album</Typography>
+            <Typography variant='h5' color='textSecondary' align='center' paragraph>hello this is shivam and this is a page where I'm uploading my coorg trip photos with my college friends in the year 2024.
+            </Typography>
           </Container>
         </div>
       </main>
