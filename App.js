@@ -3,7 +3,19 @@ import './App.css';
 import { Typography, AppBar, Card, CardActions, CardContent,Button, CardMedia, CssBaseline, Grid, Toolbar, Container, Paper } from '@material-ui/core' //{} inside these are components
 // typography is just texts
 import { PhotoCamera } from '@material-ui/icons';
+import {makeStyles} from '@material-ui/core/styles' 
+
+
+const useStyles = makeStyles((theme)=>({
+  mainContainer : {
+    backgroundColor:"purple",
+    color:"white"
+  }
+}))
+
 function App() {
+
+  const classes = useStyles()
   return (
     <>
       <CssBaseline /> {/*provides a lot of default styles*/}
@@ -14,7 +26,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <main>
-        <div>
+        <div className={classes.mainContainer}>
           <Container maxWidth="sm" style={{marginTop:"100px"}}>
             <Typography variant='h2' align='center' color='textPrimary' gutterBottom>Photo Album</Typography>
             <Typography variant='h5' color='textSecondary' align='center'>hello this is shivam and this is a page where I'm uploading my coorg trip photos with my college friends in the year 2024.
@@ -37,3 +49,6 @@ function App() {
 }
 
 export default App;
+
+
+
